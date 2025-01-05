@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+<script src="/scripts/script.js" defer></script>
+    <title>Prototyep 1</title>
+</head>
+<body>
+    <header>
+        <section class="container">
+            <div class=" wrapper wrapper__header">
+                <img src="/img/Logo.png" class="logo" alt="The Flag Zone logo">
+                <nav>
+                    <ul>
+                        <li><a href="#">Wat is Flag Football</a></li>
+                        <li><a href="#">Leer het spel</a></li>
+                        <li><a href="#">Clubs vinden</a></li>
+                        <li><a href="#">Ouders</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#" class="active">Challenges</a></li>
+                    </ul>
+                </nav>
+                <button class="btn">Vind een club</button>
+            </div>
+        </section>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <img src="/img/Hero Section.png"  alt="hero image">
+            <img src="/img/Scroll icon.png" class="scroll-icon" alt="scroll-icon">
+            
+        </section>
+
+        <section class="container">
+
+            <div class="top">                   
+
+                <section class="uitleg">
+                    <div class="display">
+                        <div>
+                            <h2>Quaterback</h2>
+                            <p class="subtitle">Senario challange</p>
+                        </div>
+                        <div>stars</div>
+                    </div>
+                    <p>Je staat op de 20-yard line, klaar om de winnende touchdown te scoren. Zie jij wie vrij staat en durf je de perfecte pass te geven?
+                    </p>
+                    <p>
+                        <span class="important">Eisen:</span><br> Voor deze challenge moet je de video <a href="#"><span class="highlight">Quaterback</span></a> hebben gekeken. 1/0
+                    </p>
+                    <p>
+                        <span class="important">Beloning:</span><br> Ontvang een exclusieve QB Badge!
+                    </p>
+                </section>
+
+                <img src="/img/QB Image.png" alt="QB image" class="uitleg-image">
+           
+            </div>
+        <section class="challenge">
+            <div class="challenge-intro hidden">
+                <img src="/img/image 9.png" alt="start of the challange">
+                <div class="overlay">
+                        <h3>Quaterback Challange</h3>
+                        <p>You ready?</p>
+                        <button class="btn start-btn" id="start-btn" >Start challenge</button>
+                </div>
+            </div>
+
+            <div class="challenge-content ">
+                <div class="challenge-content__video">
+                    <video width="600" height="500" autoplay muted>
+                        <source src="video/play1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="routes hidden">
+                        <div id="x" class="tooltip">
+                            <span>x</span>
+                            <span class="tooltiptext">Post</span>
+                        </div>
+                        <div id="y" class="tooltip">
+                            <span>y</span>
+                            <span class="tooltiptext">In</span>
+                        </div>
+                        <div id="a" class="tooltip">
+                            <span>a</span>
+                            <span class="tooltiptext">Shallow</span>
+                        </div>
+                        <div id="b" class="tooltip">
+                            <span>b</span>
+                            <span class="tooltiptext">Fade</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="challenge-content__overlay">
+                    <h2>Quaterback Challange</h2>
+                    <p>Je begint bij de 20 yard line en wilt een touchdown maken. Je ziet de routes die je 
+                        recievers lopen. Zie jij wie open staat? Weet jij wat een slimme pass is?</p>
+                        <button class="btn" id="continue-btn">Kies een route!</button>
+                </div>
+            </div>
+
+            <div class="challenge-celebration hidden">
+                <img src="/img/flag-icon.png" alt="flag">
+                <div>
+                    <h2>Goed gedaan!</h2>
+                    <p>Je hebt de Quaterback challenge voltooid! Je hebt <span class="highlight"><b>quaterback badge</b></span> verdiend!</p>
+                    <button class="btn" id="back-btn">Ga door naar de volgende challenge</button>
+                </div>
+               
+            </div>
+        </section>
+    </section>
+    </main>
+
+    <footer>
+        <section class="container">
+            <img src="/img/Logo.png" class="logo" alt="The Flag Zone logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Algemene voorwaarden</a></li>
+                    <li><a href="emailto:theflagzone@flag.nl">theflagzone@flag.nl</a></li>
+                    <li><a href="#">KvK: 68340792</a></li>
+                    <li><a href="#">AFBN</a></li>
+                    <li><a href="#">Icon</a></li>
+                    <li><a href="#">Icon</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+    
+</body>
+</html>
