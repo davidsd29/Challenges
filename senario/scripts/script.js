@@ -44,7 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       challenge.content.classList.remove('hidden');
       challenge.content.classList.add('fadeIn');
-    }, 600);
+    }, 600);  
+    
+    setTimeout(() => {
+      challenge.video.play();
+    }, 650);
     
     setTimeout(() => {
       challenge.content.classList.remove('fadeIn');
@@ -78,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
 buttons.back.addEventListener('click', () => {
-    reset();
+   window.location.reload();
   });
 
   buttons.resume.addEventListener('click', () => {
@@ -97,17 +101,6 @@ buttons.back.addEventListener('click', () => {
   scrollIcon.addEventListener('click', () => {
     scrollDown();
   });
-
-  function reset() {
-    challenge.content.classList.add('hidden');
-    celebration.frame.classList.add('hidden');
-    challenge.video.currentTime = 0;
-    challenge.video.classList.remove('fadeOut');
-    celebration.frame.classList.add('hidden');
-    celebration.frame.classList.remove('celebration');
-    challenge.intro.classList.remove('hidden');
-    counter = 0;
-  }
 
   function scrollDown() {
     window.scrollBy({
