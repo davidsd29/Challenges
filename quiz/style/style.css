@@ -1,0 +1,473 @@
+:root {
+    /* Main */
+    --primary: #FFF;
+    --secondary: #08fdd8;
+    --tertiary: #e60de6;
+    --hover: #007665;
+    --quaternary: #000;
+    --background: #000120  ;
+
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1400px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: var(--background);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    font-style: inherit;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+.highlight {
+    color: var(--tertiary);
+    text-decoration: underline;
+}
+
+.important {
+    color: var(--secondary);
+    font-weight: 700;
+    line-height: 2em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    max-width: var(--breakpoint-xl);
+    margin: 0 auto;
+}
+
+.btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    width: fit-content;
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 10px 30px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--quaternary);
+}
+
+.btn.form {
+    border-radius: 0;
+    background-color: var(--tertiary);
+    color: var(--primary);
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: var(--primary);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--primary);
+}
+
+
+.hero img:first-child {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scroll-icon {
+    position: absolute;
+    cursor: pointer;
+    bottom: 5%;
+    display: inline-block;
+    animation: bounce 1s infinite ease-in-out;
+    font-size: 2rem; 
+    right: 25%;
+  }
+
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(20px); }
+    100% { transform: translateY(0); }
+  }
+
+header {
+    width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    padding: 1em 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li {
+    border: none;
+    display: inline-block;
+    padding: 25px 0;
+    margin: 0 1em;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.logo {
+    object-fit: cover;
+    aspect-ratio: 1;
+    width: 6em;
+    margin-bottom: 2em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary);
+    transition: 0.2s ease-in-out; 
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: var(--secondary);
+}
+
+header nav a.active{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: var(--secondary);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper__header {
+    margin-top: 2em;
+}
+
+.profile p {
+    text-align: center;
+    color: inherit;
+}
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #ccc;
+}
+
+.uitleg {
+    display: grid;
+    gap: 1em;
+    width: 100%;
+}
+
+.uitleg .display {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.uitleg p {
+    max-width: 35em;
+}
+
+.display h2 {
+    font-size: 66px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.display .subtitle {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.top {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8em;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 6em;
+}
+
+.top img {
+   scale: 1.1;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+.challenge {
+    margin: 6em 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.challenge .challenge-intro >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;
+    border-radius: 8px;
+    filter: brightness(0.5);
+}
+
+.challenge .overlay {
+    display: grid;
+        align-items: center;
+        place-items: center;
+        place-content: center;
+        position: absolute;
+        top: 82%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+}
+
+.challenge h3 {
+    color: var(--primary);
+    font-size: 48px;
+    margin-bottom: .2em;
+}
+
+.challenge-intro  p {
+    color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 1em;
+}
+
+.fadeOut, .fadeIn {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+} 
+
+.fadeIn {
+    animation-name: fadeIn;
+} 
+
+.fadeOut {
+    animation-name: fadeOut;
+} 
+
+.quiz-drag {
+    display: grid;
+    gap: 3em;
+}
+
+.drop-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.drop-area div:not(.draggable) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.header {
+    font-size: 60px;
+}
+
+.dragdrop {
+    border: 1em solid var(--primary);
+    height: 70em;
+}
+.items {
+    padding: 2em;
+    border: 1em solid var(--primary);
+}
+
+.items ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.item-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #ccc;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.items img:hover {
+    border: 2px solid var(--secondary);
+    scale: .9;
+    transition: 0.2s ease-in-out;
+}
+
+.items img.drag {
+    border: 2px solid var(--secondary);
+    background: var(--secondary);
+    scale: .9;
+}
+
+.items li div {
+    display: grid;
+    place-items: center;
+    gap: .5em;
+    color: var(--primary);
+}
+
+.draggable {
+	cursor: move;
+    width: fit-content;
+}
+
+.draggable.dragging {
+    opacity: 0.5;
+}
+
+.draggable figure {
+    width: fit-content;
+}
+
+.quiz-celebration {
+    width: 100%;
+    height: 40vh;
+}
+
+.quiz-celebration aside {
+   display: grid;
+   place-content: center;
+   place-items: center;
+   text-align: center;
+   gap: 1em;
+}
+
+.quiz-celebration p:first-child {
+    font-size: clamp(1rem, 5vw, 13rem);;
+    font-weight: 700;
+    color: var(--primary);
+}
+main >section {
+    margin-bottom: 5em;
+}
+
+footer {
+    background-color:#006494;
+    color: var(--primary);
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer a {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: var(--tertiary);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+@keyframes fadeOut {
+    0% {filter: brightness(1);}
+    100% {filter: brightness(0)}
+ }
+
+ 
+@keyframes fadeIn {
+    0% {filter: brightness(0);}
+    100% {filter: brightness(1)}
+ }
+ 
+ @keyframes popUp {
+    0% {bottom: -30%;}
+    100% {bottom: 0%}
+ } 
+ 
+ @keyframes popDown {
+    0% {bottom: 0%;}
+    100% {bottom: -30%}
+ }

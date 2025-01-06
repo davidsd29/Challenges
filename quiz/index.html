@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+<script src="/quiz/scripts/script.js" defer></script>
+    <title>Prototyep 1</title>
+</head>
+<body>
+    <header>
+        <section class="container">
+            <div class=" wrapper wrapper__header">
+                <img src="img/Logo.png" class="logo" alt="The Flag Zone logo">
+                <nav>
+                    <ul>
+                        <li><a href="#">Wat is Flag Football</a></li>
+                        <li><a href="#">Leer het spel</a></li>
+                        <li><a href="#">Clubs vinden</a></li>
+                        <li><a href="#">Ouders</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#" class="active">Challenges</a></li>
+                    </ul>
+                </nav>
+                <button class="btn">Vind een club</button>
+            </div>
+        </section>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <img src="img/Hero Section.png"  alt="hero image">
+            <img src="img/Scroll icon.png" class="scroll-icon" alt="scroll-icon">
+            
+        </section>
+
+        <section class="container">
+
+            <div class="top">                   
+
+                <section class="uitleg">
+                    <div class="display">
+                        <div>
+                            <h2>Flag Football Basics</h2>
+                            <p class="subtitle">Quiz challange</p>
+                        </div>
+                        <div>stars</div>
+                    </div>
+                    <p>
+                        Test jouw kennis van de regels en termen! Krijg direct feedback bij elke vraag en verdien 
+                        een <span class="highlight">speciale badge</span> als je alles goed beantwoordt. Ben jij er klaar voor?
+                    </p>
+
+                </section>
+
+                <img src="img/quiz Image.png" alt="quiz text image" class="uitleg-image">
+           
+            </div>
+        <section class="challenge">
+            <div class="challenge-intro">
+                <img src="img/quiz banner.png" alt="start of the challange">
+                <div class="overlay">
+                        <p>You ready?</p>
+                        <button class="btn start-btn" id="start-btn" >Start challenge</button>
+                </div>
+            </div>
+
+            <section class="quiz-drag hidden">
+
+                <section class="drop-area">
+                    <div>
+                        <p class="header">Flag Football</p>
+                        <div class="dragdrop" data-zone="flag"></div>
+                    </div>
+    
+                    <div>
+                        <p class="header">American Football</p>
+                        <div class="dragdrop" data-zone="tackle"></div>
+                    </div>
+                </section>
+                
+
+                <div class="items">
+                    <ul>
+                        <li class="draggable">
+                            <div>
+                                <figure><img src="img/items/Bitje.png" class="item-image" alt="Bitje dat gebruikt wordt bij flag en american football" data-item="bitje"></figure>
+                                <figcaption>Bitje</figcaption>
+                            </div>
+                        </li>
+                        <li class="draggable">
+                            <div>
+                                <figure><img src="img/items/Cleats.png" class="item-image" alt="Cleats dat gebruikt wordt bij beide sporten" data-item="cleats"></figure>
+                                <figcaption>Football cleats</figcaption>
+                            </div>
+                        </li>
+                        <li class="draggable">
+                            <div>
+                                <figure><img src="img/items/Flag Jersey.png" class="item-image" alt="Flag Football jersey" data-item="flag-jersey"></figure>
+                                <figcaption>Jersey</figcaption>
+                            </div>
+                        </li>
+                        <li class="draggable">
+                            <div>
+                                <figure><img src="img/items/Flags (1).png" class="item-image" alt="Flag Football flags" data-item="flags"></figure>
+                                <figcaption>Flags</figcaption>
+                            </div>
+                        </li>
+                        <li class="draggable">
+                            <div>
+                                <figure><img src="img/items/Gloves.png" class="item-image" alt="Gloves dat bij beide sporten wordt gebruikt" data-item="gloves"></figure>
+                                <figcaption>Gloves</figcaption>
+                            </div>
+                        </li>
+                        <li class="draggable">
+                            <div>
+                                <figure><img src="img/items/helmet.png" class="item-image" alt="American Football helmet" data-item="helmet"></figure>
+                                <figcaption>Helmet</figcaption>
+                            </div>
+                        </li>
+                        <li class="draggable">
+                            <div>
+                                <figure><img src="img/items/padded.webp" class="item-image" alt="Padded shirt" data-item="padded-shirt"></figure>
+                                <figcaption>Padded shirt</figcaption>
+                            </div>
+                        </li>
+                        <li class="draggable">
+                            <div>
+                                <figure><img src="img/items/shoulderpads.png" class="item-image" alt="Shoulderpads" data-item="shoulderpads"></figure>
+                                <figcaption>Shoulderpads</figcaption>
+                            </div>
+                        </li>
+                        <li class="draggable">
+                            <div>
+                                <figure><img src="img/items/AF jersey.png" class="item-image" alt="American Football jersey" data-item="tackle-jersey"></figure>
+                                <figcaption>Jersey</figcaption>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div>
+                                <figure><img src="" alt=""></figure>
+                                <figcaption></figcaption>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+
+            </section>
+            <div class="quiz-celebration hidden">
+
+                <div class="alles-goed hidden">
+                    <aside>
+                        <p>Gefeliciteerd!!</p>
+                        <p>
+                            Je hebt alle vragen goed beantwoord! Je hebt de badge <span class="highlight">Flag Football Expert</span> verdiend.
+                            <p>Probeer meteen de volgende challenge te pakken!</p>
+                        </p>
+                        <button class="btn" id="next-btn">Challenges</button>
+                    </aside>
+                </div>
+
+                <div class="niet-goed hidden">
+                    <aside>
+                        <p>Helaas...</p>
+                        <p>Je hebt nog niet alle vragen goed beantwoord.</p>
+                        <p>Probeer het nog een keer!</p>
+                        <button class="btn" id="back-btn">Try again</button>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </section>
+    </main>
+
+    <footer>
+        <section class="container">
+            <img src="img/Logo.png" class="logo" alt="The Flag Zone logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Algemene voorwaarden</a></li>
+                    <li><a href="emailto:theflagzone@flag.nl">theflagzone@flag.nl</a></li>
+                    <li><a href="#">KvK: 68340792</a></li>
+                    <li><a href="#">AFBN</a></li>
+                    <li><a href="#">Icon</a></li>
+                    <li><a href="#">Icon</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+    
+</body>
+</html>
