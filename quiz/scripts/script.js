@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     intro: document.querySelector('.challenge-intro'),
     drag: document.querySelector('.quiz-drag'),
     celebration: document.querySelector('.quiz-celebration'),
+    uitleg: document.querySelector('.quiz-uitleg'),
     quizQuestion: document.querySelector('.quiz-questions'),
   };
 
@@ -10,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     start: document.getElementById('start-btn'),
     next: document.getElementById('next-btn'),
     back: document.getElementById('back-btn'),
+    close: document.getElementById('close-btn'),
+    minion: document.querySelector('.niet-goed div'),
   };
 
   const drag = {
@@ -26,6 +29,24 @@ document.addEventListener('DOMContentLoaded', () => {
   
   buttons.next.addEventListener('click', () => {
     window.location.reload();
+  });  
+  
+  buttons.close.addEventListener('click', () => {
+    window.location.reload();
+  });
+
+  buttons.minion.addEventListener('click', () => {
+    challenge.celebration.classList.add('fadeOut');
+
+    setTimeout(() => {
+      challenge.celebration.classList.add('hidden');
+      challenge.uitleg.classList.remove('hidden');
+      challenge.uitleg.classList.add('fadeIn');
+    }, 500);
+
+    setTimeout(() => {
+      challenge.drag.classList.remove('fadeIn');
+    }, 1500);
   });
 
   buttons.start.addEventListener('click', () => {

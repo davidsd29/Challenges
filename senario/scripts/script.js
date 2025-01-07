@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resume: document.getElementById('continue-btn'),
     back: document.getElementById('back-btn'),
   };
+  
 
   const awnsers = {
     x: document.getElementById('x'),

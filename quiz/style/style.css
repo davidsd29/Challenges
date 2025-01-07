@@ -91,9 +91,13 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--quaternary);
 }
 
-.btn.form {
-    border-radius: 0;
+.btn.close {
     background-color: var(--tertiary);
+    color: var(--primary);
+}
+
+.btn.close:hover {
+    background-color:#5d065d;
     color: var(--primary);
 }
 
@@ -212,6 +216,7 @@ header nav a.active{
 }
 
 .uitleg {
+    flex: 0 1 50em;
     display: grid;
     gap: 1em;
     width: 100%;
@@ -242,17 +247,21 @@ header nav a.active{
 
 .top {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
+    justify-content: center;
     gap: 8em;
     width: 100%;
     border-bottom: 2px solid #ccc;
-    padding-bottom: 6em;
+    padding: 0 2em 6em 2em;
 }
 
 .top img {
-   scale: 1.1;
     object-fit: cover;
     object-position: 50% 25%;
+    width: 50%;
+    flex: 0 1 25em; 
+    /* Flex-grow: 0 (niet groeien), Flex-shrink: 1 (kan krimpen), Flex-basis: 25em */
 }
 .challenge {
     margin: 6em 0;
@@ -334,9 +343,17 @@ header nav a.active{
     font-size: 60px;
 }
 
+.intro {
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    line-height: 24px;
+}
+
 .dragdrop {
     border: 1em solid var(--primary);
-    height: 70em;
+    height: fit-content;
+    min-height: 20em;
 }
 .items {
     padding: 2em;
@@ -410,6 +427,71 @@ header nav a.active{
     font-weight: 700;
     color: var(--primary);
 }
+
+.quiz-uitleg {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: 3em;
+}
+
+.quiz-uitleg li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+.quiz-uitleg li img {
+    cursor: pointer;
+}
+
+.quiz-uitleg figcaption p:first-child {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+.quiz-uitleg span {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.quiz-uitleg span.niet-verplicht {
+    color: var(--tertiary);
+}
+
+.niet-goed {
+   padding: 2em;
+}
+.niet-goed div  {
+    padding: 1em;
+ }
+
+.niet-goed div {
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.niet-goed div:hover {
+  box-shadow: 0 0 10px 5px var(--secondary);   
+}
+
+.niet-goed img {
+    width: 20em;
+    height: 100%;
+    object-fit: cover;
+}
+
+.niet-goed div p {
+    font-size: 30px;
+}
+
+
 main >section {
     margin-bottom: 5em;
 }
@@ -419,18 +501,46 @@ footer {
     color: var(--primary);
 }
 
+
+
 footer > div {
     display: flex;
     justify-content: space-between;
+
     align-items: center;
     width: 100%;
     margin-top: 1em;
+}
+
+footer img {
+    flex-basis: 10em;
 }
 
 footer nav ul {
     display: flex;
     justify-content: center;
     gap: 1em;
+}
+
+@media (max-width: 800px) {
+
+    footer {
+        display: grid;
+        place-items: center;
+    }
+
+    footer > section {
+       display: grid !important;
+       place-content: center;
+       place-items: center;
+       gap: 1em;
+    }
+
+    footer nav ul {
+        display: grid;
+        text-align: center;
+        gap: 1em;
+    }
 }
 
 footer a {

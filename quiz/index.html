@@ -69,6 +69,12 @@
             </div>
 
             <section class="quiz-drag hidden">
+                <section class="intro">
+                    <p>Voor deze challenge moet je de juiste items naar de zone slepen waar ze horen.
+                        je hebt een sectie voor Flag Football en een sectie voor American Football.
+                        Weet jij welke items bij welke sport horen? 
+                    </p>
+                </section>
 
                 <section class="drop-area">
                     <div>
@@ -143,7 +149,7 @@
                 </div>
 
             </section>
-            <div class="quiz-celebration hidden">
+            <section class="quiz-celebration hidden">
 
                 <div class="alles-goed hidden">
                     <aside>
@@ -159,12 +165,100 @@
                 <div class="niet-goed hidden">
                     <aside>
                         <p>Helaas...</p>
-                        <p>Je hebt nog niet alle vragen goed beantwoord.</p>
-                        <p>Probeer het nog een keer!</p>
+                        <p>Je hebt nog niet alle items goed geplaatst</p>
+                        <p>Vond je het een beetje lastig en wil je de antworden weten en uitleg ervan krijgen? Klik dan op de minion</p>
+
                         <button class="btn" id="back-btn">Try again</button>
                     </aside>
+
+                    <div>
+                        <img src="./img/minion.gif" alt="Minion die aandacht trekt door te zwaaien">
+                        <p>Uitleg? Klik op mij!</p>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <section class="quiz-uitleg hidden">
+                    <ul>
+                        <li>
+                            <figure><img src="./img/items/Bitje.png" class="item-image" alt="Bitje dat gebruikt wordt bij flag en american football" data-item="bitje"></figure>
+                            <figcaption>
+                                <p>Bitje</p>
+                                <p>Een bitje wordt vooral gebruikt bij <span>American Football</span> maar kan ook bij <span>Flag Football</span> gebruikt worden.
+                                Maar dat kies je zelf, het is <span class="niet-verplicht">niet verplicht</span> om het te gebruiken. het wordt gerbuikt om je tyanden te beschermen. Een bitje is een item die je zelf moet kopen.</p>
+                            </figcaption>
+                        </li>
+                        <li>
+                            <figure><img src="./img/items/Cleats.png" class="item-image" alt="Cleats dat gebruikt wordt bij beide sporten" data-item="cleats"></figure>
+                            <figcaption>
+                                <p>Football cleats</p>
+                                <p>Dit zijn cleats speciaal voor Football en worden gebruikt bij <span>American Football</span> en bij <span>Flag Football</span>. Het maakt ud niet uit aan welke kant je deze zet want ze zijn beide goed.
+                                    Cleats moet je zelf kopen.
+                                </p>
+                            </figcaption>
+                        </li>
+                        <li>
+                            <figure><img src="./img/items/Flag Jersey.png" class="item-image" alt="Flag Football jersey" data-item="flag-jersey"></figure>
+                            <figcaption>
+                                <p>Jersey</p>
+                                <p>Dit is een Flag Jersey en wordt gebruikt bij <span>Flag Football</span>. Dit kan je herkennen door dat het erg op een normale tshirt lijkt. 
+                                    Deze krijg je ook van de vereniging waar je speelt.</p>
+                            </figcaption>
+                        </li>
+                        <li>
+                            <figure><img src="./img/items/Flags (1).png" class="item-image" alt="Flag Football flags" data-item="flags"></figure>
+                            <figcaption>
+                                <p>Flags</p>
+                                <p>Deze worden gebruikt bij <span>Flag Football</span>. Ze zitten vast aan een riem op je heup. Wanneer een verdediger een vlag van een aanvaller trekt, wordt de play gestopt.
+                                    Deze wordt gegeven door de vereniging waar je speelt.
+                                </p>
+                            </figcaption>
+                        </li>
+                        <li>
+                            <figure><img src="./img/items/Gloves.png" class="item-image" alt="Gloves dat bij beide sporten wordt gebruikt" data-item="gloves"></figure>
+                            <figcaption>
+                                <p>Gloves</p>
+                                <p>Gloves worden gebruikt om de bal makkelijker te vangen. Ze geven je handen extra grip. Deze worden bij <span>American Football</span> en bij <span>Flag Football</span> gebruikt.
+                                Ze zijn <span class="niet-verplicht">niet verplicht</span> op om te gebruiken, en als je het wilt gebruiken moet je het zelf kopen.</p>
+                            </figcaption>
+                        </li>
+                        <li>
+                            <figure><img src="./img/items/helmet.png" class="item-image" alt="American Football helmet" data-item="helmet"></figure>
+                            <figcaption>
+                                <p>Helmet</p>
+                                <p>Een helm wordt gebruikt bij <span>American Football</span>. Dit wordt gedragen om je hoofd te beschermen tijdens het spelen. Omdat je veel met
+                                je hoofd bots en niemand ernstige verwondingen wilt, wordt er een helm gedragen. In Nederland kan je het krijgen van je vereniging maar meestal moet je het zelf kopen.</p>
+                            </figcaption>
+                        </li>
+                        <li>
+                            <figure><img src="./img/items/padded.webp" class="item-image" alt="Padded shirt" data-item="padded-shirt"></figure>
+                            <figcaption>
+                                <p>Padded shirt</p>
+                                <p>Een padded shirt wordt gebruikt bij <span>American Football</span>. Dit wordt gebruikt voor extra bescherming om pijn te minimaliseren.
+                                Deze zijn <span class="niet-verplicht">Niet verplicht</span> om te gebruiken en als je het wel wilt dan moet je het zelf kopen.</p>
+                            </figcaption>
+                        </li>
+                        <li>
+                            <figure><img src="./img/items/shoulderpads.png" class="item-image" alt="Shoulderpads" data-item="shoulderpads"></figure>
+                            <figcaption>
+                                <p>Shoulderpads</p>
+                                <p>Shoulderpads worden gebrukt bij <span>American Football</span>. Deze worden gebruikt om de inpact om je shouders en borst te minimaliseren
+                                tijdens het maken of krijgen van een tackle. De shoulderpad is ook een item die je zelf moet kopen. </p>
+                            </figcaption>
+                        </li>
+                        <li>
+                            <figure><img src="./img/items/AF jersey.png" class="item-image" alt="American Football jersey" data-item="tackle-jersey"></figure>
+                            <figcaption>
+                                <p>Jersey</p>
+                                <p>Dit is een American Football trainings jersey. Je kan aan de schouders herkennen dat het wordt egrbuikt voor <span>American Football</span>. 
+                                    Het is een kleine detail maar wel te zien. Ook zitten er in de jersey kleine gaten zodat je lichaam genoeg frisse lucht krijg tijdens het trainen.
+                                Dit wordt gegeven door de vereniging waar je speelt</p>
+                            </figcaption>
+                        </li>
+                    </ul>
+
+                    <button class="btn close" id="close-btn">close</button>
+            </section>
         </section>
     </section>
     </main>
